@@ -1,7 +1,10 @@
-export const Cell = () => {
+interface CellProps {
+  title: string;
+}
+export const Cell = ({ title }: CellProps) => {
   return (
     <div>
-      <h1>cell입니다</h1>
+      <h1>{title}</h1>
     </div>
   );
 };
